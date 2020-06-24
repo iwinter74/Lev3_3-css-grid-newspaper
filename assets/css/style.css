@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0
+}
+body {
+    background: rgb(233, 233, 224);
+    font-family: 'Cormorant Garamond', serif;
+    padding-left: 5%;
+}
+header section {
+    display: flex;
+    justify-content: space-around;
+    border-top: double #333;
+    border-bottom: double #333;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+header h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+header span{
+    font-size: 1.8em;
+    font-weight: 700;
+}
+body>h1 {
+   font-size: 2em;
+   text-align: center;
+   padding-top: 0.5em
+}
+.articles {
+    display: flex;
+    padding-bottom: 1em;
+}
+.articles article {
+    width: 50%
+}
+.articles article:nth-of-type(odd) {
+    padding-right: 1em
+}
+#kitchen p {
+    font-style: italic;
+    padding-bottom: 3em
+}
+#kitchen img {
+    width: 100%;
+    height: 95%
+}
+aside img {
+    width: 100%
+}
+aside h1 {
+    font-size: 3em
+}
+main {
+    display: grid;
+    grid-gap: 1em 1em;
+    grid-template-columns: 15% 15% 50% 13%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: "main-h1 main-h1 main-h1 aside"
+    "articles articles kitchen aside"
+}
+main>h1 {
+    grid-area: main-h1;
+    text-align: center;
+    padding-top: 0.5em;
+}
+#articles {
+    grid-area: articles
+}
+#kitchen {
+    grid-area: kitchen
+}
+aside {
+    grid-area: aside;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+aside div {
+    border: double;
+    padding: 1em 1em;
+    min-width: 150px;
+}
+#knives {
+    text-align: center;
+}
+#knives a {
+    color: #333;
+}
+/* 
+Schrift: 'Cormorant Garamond'
+Farben: rgb(233, 233, 224), #333 */
